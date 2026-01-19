@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Beginner-friendly CSS: simple and well-commented */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f9fb; /* light background */
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Center the content and limit width for readability */
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    h2 { margin-top: 0; }
+
+    /* Simple form styles */
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccd6dd;
+      border-radius: 6px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    /* Submit button style */
+    input[type="submit"] {
+      background-color: #2b6cb0;
+      color: #fff;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #245a9a;
+    }
+
+    /* Small note/footer inside the card */
+    .note { font-size: 0.9rem; color: #555; margin-top: 10px; }
+
+    /* Make the form responsive on very small screens */
+    @media (max-width: 420px) {
+      .container { padding: 12px; }
+      input[type="submit"] { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Help</h2>
+    <form id="contact-form" action="https://formspree.io/f/xreezwnj" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <input id="input-three" type="submit" value="Submit Message">
+    </form>
+    <p class="note">We'll respond within 2 business days. For urgent requests email <a href="mailto:yafetyavan@gmail.com">yafetyavan@gmail.com</a>.</p>
+  </div>
+</body>
+</html>

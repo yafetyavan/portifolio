@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Simple, beginner-friendly styles */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+      background-image: url(port.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 18px;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    h2 { margin-top: 0; }
+
+    /* Make lists look nicer */
+    ul { padding-left: 20px; }
+
+    /* Image: responsive and neat */
+    .content img { max-width: 100%; height: auto; border-radius:6px; display:block; margin:12px 0; }
+
+    /* Small helper box for resources */
+    .resources { background:#f0f6ff; padding:10px; border-radius:6px; margin-top:12px }
+
+    /* Simple link button */
+    .btn { display:inline-block; padding:8px 12px; background:#2b6cb0; color:#fff; text-decoration:none; border-radius:6px }
+    .btn:hover{background:#245a9a}
+  </style>
+</head>
+<body>
+  <div class="content">
+    
+    <h2 id="Content">Content</h2>
+
+    <section>
+      <h3>Web Development</h3>
+      <p>Basic skills and topics to learn as a front-end developer:</p>
+      <ul>
+        <li>HTML — structure of web pages</li>
+        <li>CSS — styling and layout</li>
+       
+      </ul>
+      <img src="contentpic.jpg" alt="Web development illustration">
+    </section>
+
+    <section>
+      <h3>Other Interests</h3>
+      <ul>
+        <li>Python Programming — automation and data</li>
+      </ul>
+    </section>
+
+    <section class="resources">
+      <h4>Resources</h4>
+      <p>Start with these beginner-friendly sites:</p>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      </ul>
+      <a class="btn" href="WDDproject1.html">See a project</a>
+    </section>
+  </div>
+</body>
+</html>
